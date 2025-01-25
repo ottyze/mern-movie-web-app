@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0rem;
+  box-shadow: 0 4px 6px rgba(114, 114, 114, 0.2);
+
+  .title {
+    color:#ee2b2b;
+    font-size: 2.5rem;
+    padding-left: 1rem;
+    margin-top: 0.6rem;
+    line-height: 1;
+  }
+  
+  .register, .sign-in, .sign-out {
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .nav-btns {
+    margin-top: -0.6rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .register, .sign-in, .sign-out {
+    font-size: 1rem;
+  }
+
+  .sign-in, .sign-out{
+    margin-right: 1rem;
+  }
+  
+  .register:hover, .sign-in:hover, .sign-out:hover {
+    border: 2px solid #ee2b2b;
+    cursor:pointer;
+  }
+}
+
+
+
+.genre-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.genre {
+  color: #fbfbfb;
+  display: inline-flex;
+  align-items: flex-start;
+  margin-left: 2rem;
+  padding-bottom: 0.2rem;
+  box-shadow: 0 1px 0 #fbfbfb;
+}
+
+.movie-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #393c41 #595b61;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+.user-name{
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    .title {
+      font-size: 1.5rem;
+    }
+    .register, .sign-in, .sign-out{
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .App-header {
+    .register, .sign-in, .sign-out{
+      font-size: 0.75rem;
+    }
+  }
+  
+}
